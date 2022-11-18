@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Kumbh+Sans"
+    >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    >
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <style>
+      body {
+        background-color: hsl(185, 75%, 39%);
+        background-image: url(/images/bg-pattern-top.svg),
+          url(/images/bg-pattern-bottom.svg);
+        background-size: 850px;
+        background-repeat: no-repeat;
+        background-position: top -400px left -170px, bottom -620px right -190px;
+      }
+      .profile-container {
+        background-color: white;
+        width: 350px;
+        height: 380px;
+        margin: auto;
+        margin-top: 11%;
+        margin-bottom: 40px;
+        border-radius: 16px;
+        text-align: center;
+      }
+      .top-bg-container {
+        border-radius: 16px 16px 0 0;
+      }
+      .main-photo {
+        border-radius: 50%;
+        border: 5px solid white;
+        margin-top: -60px;
+      }
+      .main-info,
+      .stats {
+        font-family: "Kumbh Sans";
+      }
+      .name {
+        display: inline-block;
+        font-size: 16px;
+        text-shadow: 1px 0 hsl(229, 23%, 23%);
+        font-weight: bold;
+        color: hsl(229, 23%, 23%);
+        margin-left: 5px;
+      }
+      .age {
+        display: inline-block;
+        margin-left: 4px;
+        font-weight: 400;
+        color: hsl(227, 10%, 46%);
+      }
+      .location {
+        margin-top: -8px;
+        font-size: 13px;
+        font-weight: 400;
+        color: hsl(227, 10%, 46%);
+      }
+      .stats {
+        display: inline-flex;
+        flex-direction: column;
+        letter-spacing: 1px;
+        width: 90px;
+        margin-top: 20px;
+      }
+      .number {
+        font-size: 17px;
+        text-shadow: 1px 0 hsl(229, 23%, 23%);
+        font-weight: bold;
+        color: hsl(229, 23%, 23%);
+      }
+      .status {
+        font-size: 10px;
+        margin-top: -8px;
+        font-weight: 400;
+        color: gray;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile-container">
+      <img
+        class="top-bg-container"
+        src="/images/bg-pattern-card.svg"
+        alt="card-background"
+      >
+      <img
+        class="main-photo"
+        src="/images/image-victor.jpg"
+        alt="image of vistor crest"
+      >
+      <div class="main-info">
+        <p class="name">Victor Crest</p>
+        <p class="age">26</p>
+        <p class="location">London</p>
+      </div>
+      <div class="stats">
+        <p class="number">80K</p>
+        <p class="status">Followers</p>
+      </div>
+      <div class="stats">
+        <p class="number">803K</p>
+        <p class="status">Likes</p>
+      </div>
+      <div class="stats">
+        <p class="number">1.4K</p>
+        <p class="status">Photos</p>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">ALAS</a>.
+    </div>
+  </body>
+</html>
